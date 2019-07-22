@@ -1,0 +1,38 @@
+html,body,.container {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.clock {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url(images/clock-dial.png)
+}
+
+.clock:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    z-index: 100;
+    background: #000000;
+}
+
+.hands {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin : 70px 0px 0px 70px;
+    
+}
